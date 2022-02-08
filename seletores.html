@@ -6,7 +6,41 @@
     <title>CSS Selectors</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+        /* 
+          * : é um seletor universal
+          .<classe> : é um seletor de classe.
+            Ex: .tag
+          #<id> : é um seletor de id.
+            Ex: #aprovados
+          <tag1> > <tag2> : seleciona o primeiro elemento filho do seletor mencionado antes.
+            Ex: #aninhado > div
+          <tag1> <tag2> : seleciona qualquer elemento que esteja dentro do seletor mencionado.
+            Ex: #aninhado section
+          <tag1> + <tag2> : seleciona o irmão (tag2) que se encontra vizinho do outro.
+            Ex: p + ul
+          <tag1> ~ <tag2> : seleciona o irmão (tag2) que esteja dentro do pai, não importando se são vizinhos ou não.
+            Ex: p ~ ol
+          [<propriedade>] : seleciona a propriedade de qualquer tag.
+            Ex: [feira]
+              [<propriedade>=<atributo>] : seleciona a propriedade que seja específico a um certo atributo.
+                Ex: [feira=casa]
+              [<propriedade>~=<atributo>] : seleciona a propriedade que seja específico a um certo atributo, sem considerar se existe um ou mais atributos juntos.
+                Ex: [feira~=escritorio]
+              [<propriedade>*=<parte da palavra>] : seleciona a propriedade que contenha o aributo com a parte indicada, sem considerar se existe um ou mais atributos juntos.
+                Ex: [feira*=sa] ou [feira*=asa]
+          <tag>:nth-child(n) : seleciona a tag que seja o filho indicado pelo número n.
+            Ex: span:nth-child(2)
+          <tag> > :nth-child(odd) : seleciona os filhos impares da tag desejada.
+            Ex: section > :nth-child(odd) ou even para filhos pares
+          <tag> , <tag> : atribui a estilização CSS para as duas tags
+            Ex: p , ul
+          <tag> > <tag2>:nth-of-type(n) : seleciona os filhos do tipo tag2 que esteja na posição n.
+            Ex: section > span:nth-of-type(2)
+        */
+        * {
+          color: #ff0;
+          background-color: #f77;
+        }
     </style>
 </head>
 

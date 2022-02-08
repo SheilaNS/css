@@ -10,3 +10,4 @@ Antes de começar, foi feito o download da estrutura das aulas.
 * anatomia.html - como é a anatomia do CSS
 * origem.html - onde e como aplicar o CSS em uma página HTML
 * classeTag.html - ajeitando a visualização das classes em CSS com .js
+* seletores.html - como funciona os seletores em CSS
